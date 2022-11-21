@@ -17,6 +17,9 @@ windwos下被控端
 
 linux控制端
     gcc icmpsh-m.c lib.h aes.h aes.c -o icmpsh-m
+    sysctl -w net.ipv4.icmp_echo_ignore_all=1    关闭linux系统下的icmp自动应答功能(注意:这个是临时生效)
+    echo net.ipv4.icmp_echo_ignore_all=1 >> /etc/sysctl.conf && sysctl -p (这个永久生效)
+    sudo ./icmpsh-m
 ```
 
 ## Background
