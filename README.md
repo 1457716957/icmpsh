@@ -1,3 +1,14 @@
+## 原项目
+    https://github.com/bdamele/icmpsh
+
+
+## 改进点
+```
+1. 通信进行了aes_ctr加密(包括传输内容和下发指令)
+2. 伪装了windows下的正常通信
+```
+
+
 ## 编译与运行
 ```
 windwos下被控端
